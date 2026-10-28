@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#080510">
+<title>HEADLOCK🍏 — FREE FIRE CONTROL</title>
+<style>
+:root{--bg:#07040d;--panel:#0d0917;--panel2:#120c20;--line:#392052;--violet:#8b12ff;--violet2:#bd55ff;--pink:#ff27e7;--cyan:#bafaff;--muted:#9c8cb9;--text:#f4edff;--green:#00f58a;--red:#ff3159}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 48% -10%,#371052 0,transparent 38%),radial-gradient(ellipse at 100% 35%,#270c45 0,transparent 24%),#07040d;color:var(--text);font-family:Arial,Helvetica,sans-serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.17;background-image:linear-gradient(#8120b81a 1px,transparent 1px),linear-gradient(90deg,#8120b81a 1px,transparent 1px);background-size:26px 26px}
+button,input{font:inherit}button{cursor:pointer}
+.shell{max-width:1450px;margin:auto;padding:12px;position:relative}
+.hero{height:210px;border:1px solid #4e1876;border-radius:20px;overflow:hidden;position:relative;display:flex;align-items:center;padding:22px 24px;background:radial-gradient(ellipse at 80% 40%,#4a1178 0,transparent 35%),linear-gradient(100deg,#090511 0,#140722 50%,#080510 100%);box-shadow:0 0 35px #7300d522}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#07040de8 0%,#07040d9c 46%,#07040d22 100%),radial-gradient(circle at 83% 25%,#b45aff 0 2px,transparent 3px),radial-gradient(circle at 89% 70%,#bd55ff 0 2px,transparent 3px)}
+.hero-art{position:absolute;right:2%;top:-35px;width:38%;height:280px;background:radial-gradient(ellipse at 50% 40%,#8e25f8 0,transparent 38%),linear-gradient(140deg,transparent 30%,#3b0b61 50%,transparent 72%);opacity:.9;filter:drop-shadow(0 0 25px #a000ff)}
+.hero-art:before{content:"";position:absolute;inset:22px 22% 0;background:linear-gradient(145deg,#191025,#05040a 50%,#33104a);clip-path:polygon(48% 0,74% 10%,90% 28%,78% 47%,100% 73%,73% 100%,25% 100%,0 73%,22% 48%,10% 27%,27% 9%);border:1px solid #b54cff}
+.hero-art:after{content:"";position:absolute;top:72px;left:43%;width:48px;height:18px;background:#d7a6ff;transform:rotate(-15deg);box-shadow:0 0 20px #f0aaff}
+.hero-content{position:relative;z-index:1;display:flex;align-items:center;gap:18px;min-width:0}
+.avatar{width:155px;height:155px;border-radius:50%;border:2px solid #a32aff;box-shadow:0 0 20px #9e00ff88,inset 0 0 20px #a32aff66;background:radial-gradient(circle at 50% 32%,#c2a5ff 0 5%,transparent 6%),radial-gradient(ellipse at 50% 45%,#24152f 0 27%,transparent 28%),linear-gradient(145deg,#2d0d4b,#080510 55%,#6a13a5);display:grid;place-items:center;font-size:56px;flex-shrink:0}
+.brand-title{font-size:clamp(30px,5.5vw,66px);font-weight:1000;font-style:italic;letter-spacing:1px;line-height:.98;color:#e8c6ff;text-shadow:0 0 5px #b34aff,0 0 22px #9b00ff,3px 3px 0 #4e1475}
+.brand-sub{font-size:12px;letter-spacing:2px;color:#cbb5ed;margin:13px 0 9px}.tagline{font-size:clamp(10px,1.4vw,16px);font-weight:900;font-style:italic;letter-spacing:1px;color:#d92aff;text-shadow:0 0 12px #a000ff}
+.hero-badge{position:absolute;right:18px;top:14px;border:1px solid #48205e;border-radius:20px;padding:8px 12px;font-size:11px;color:#b9a8d2;background:#0a0712cc;z-index:2}
+.layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:12px;margin-top:12px}
+.sidebar{border:1px solid #2d1744;border-radius:17px;background:#080611e8;padding:9px;height:fit-content;position:sticky;top:8px}
+.nav{width:100%;border:0;border-bottom:1px solid #20152d;background:transparent;color:#b7a1db;text-align:left;padding:15px 10px;display:flex;align-items:center;gap:12px;font-weight:800;font-size:12px;letter-spacing:.3px}
+.nav span{font-size:21px;width:25px;text-align:center;color:#c18bff}.nav.active{border-radius:12px;background:linear-gradient(90deg,#5d0ab0,#240747);color:white;box-shadow:inset 0 0 0 1px #a020ff}
+.nav:last-of-type{border-bottom:0}.side-quote{color:#b622ff;font-weight:1000;font-style:italic;text-align:center;line-height:1.5;margin:25px 4px;font-size:17px;transform:rotate(-5deg)}.side-foot{text-align:center;color:#ad7df4;border-top:1px solid #241333;padding-top:16px;margin-top:25px;font-size:12px;line-height:2}
+.main{min-width:0;border:1px solid #371954;border-radius:19px;background:#07040dcc;padding:12px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{min-width:0;border:1px solid #482065;border-radius:18px;background:linear-gradient(145deg,#120b20ed,#080611f5 72%);padding:16px;box-shadow:inset 0 0 20px #5e1b7d0a}
+.card-head{display:flex;align-items:center;gap:13px;margin-bottom:12px}.head-icon{width:48px;height:48px;border:2px solid #bd36ff;border-radius:50%;display:grid;place-items:center;font-size:24px;color:#dca4ff;box-shadow:0 0 12px #8b12ff33;flex-shrink:0}
+.card h2{font-size:17px;margin:0 0 5px;color:#e8d7ff}.sub{font-size:11px;color:#9584b3}
+.control-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid #1d1428;font-size:13px}.control-row:last-child{border-bottom:0}
+.switch{appearance:none;width:43px;height:25px;border-radius:20px;background:#292034;border:1px solid #56436c;position:relative;flex-shrink:0;transition:.2s}.switch:before{content:"";position:absolute;left:3px;top:3px;width:17px;height:17px;border-radius:50%;background:#b9abc9;transition:.2s}.switch:checked{background:linear-gradient(90deg,#7900ff,#d528ff);border-color:#d88aff;box-shadow:0 0 12px #a200ff55}.switch:checked:before{left:21px;background:#fff}
+.range-line{display:grid;grid-template-columns:minmax(95px,auto) 1fr 35px;gap:10px;align-items:center;padding:10px 0;font-size:12px}.range-line input{width:100%;accent-color:#b62cff}.val{color:#f1dcff;text-align:right;font-weight:800}
+.setting{margin-top:9px;border:1px solid #3b2251;border-radius:12px;padding:11px 13px;display:flex;justify-content:space-between;align-items:center;background:#0a0712;font-size:12px;color:#d4c1ee}
+.feature{border:1px solid #24152f;border-radius:15px;padding:9px;margin-top:8px;background:#080611}.feature .control-row{padding:4px 0;border:0}.feature-name{display:flex;align-items:center;gap:12px}.feature-icon{width:40px;height:40px;border:1px solid #9e24db;border-radius:50%;display:grid;place-items:center;color:#dba4ff;font-size:20px}
+.warning{color:#ff3159;font-size:11px;line-height:1.5;margin:9px 2px 0}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:10px 0 14px}.metric{border:1px solid #47215f;border-radius:48px;text-align:center;padding:12px 5px;background:radial-gradient(circle at 50% 0,#321047,#090611 70%);min-width:0}.metric .mi{font-size:20px;color:#d14aff}.metric b{display:block;font-size:11px;margin:7px 0}.metric strong{font-size:19px;display:block}.metric small{display:block;font-size:10px;color:#a493c0;margin-top:6px}
+.btn{border:1px solid #47235d;border-radius:12px;padding:11px 14px;color:#e9d7ff;background:linear-gradient(100deg,#190d28,#0b0712);font-size:12px;font-weight:900;letter-spacing:.3px}.btn.primary{background:linear-gradient(100deg,#a000ff,#6000d7);border-color:#cf5bff;box-shadow:0 0 18px #8500ff44}.btn.gold{background:linear-gradient(100deg,#ffb51c,#ffdc65);color:#180d00;border-color:#ffe49b}.btn.full{width:100%;font-size:13px;padding:13px}.btn:active{transform:scale(.99)}
+.statusline{text-align:center;font-size:11px;color:#ad9ac9;margin-top:12px}.statusline b{color:#00ff90}
+.experience-controls{border:1px solid #261735;border-radius:14px;padding:8px 12px;margin-top:8px}.volume{display:flex;align-items:center;gap:10px;font-size:11px;color:#b7a5d1;margin:12px 0}.volume input{flex:1;min-width:0;accent-color:#b62cff}
+.button-row{display:flex;gap:8px;margin-top:12px}.button-row .btn{flex:1}
+.game-card{grid-column:1/-1}.games{display:grid;grid-template-columns:1fr 1fr;gap:12px}.game{border:1px solid #3d2851;border-radius:15px;padding:10px;display:flex;gap:12px;align-items:center;background:#090611}.game-art{width:105px;height:105px;flex-shrink:0;border-radius:13px;display:grid;place-items:center;text-align:center;font-weight:1000;font-style:italic;color:white;font-size:14px;background:radial-gradient(circle at 50% 30%,#ff5a24,#5d0b2c 45%,#0b0614 80%);border:1px solid #6c275c;text-shadow:0 2px 5px #000}.game.max .game-art{background:radial-gradient(circle at 50% 30%,#5bc9ff,#4c169a 45%,#090613 80%);border-color:#6354ad}.game-copy{flex:1;min-width:0}.game-copy b{display:block;font-size:14px;color:#c5ffff;margin-bottom:6px}.game-copy small{display:block;color:#9a88b7;font-size:11px;margin-bottom:12px}.game-copy .btn{width:100%}
+.footer-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;border:1px solid #3b2251;border-radius:13px;padding:13px 16px;background:#0a0712;font-size:11px;color:#ad9ac9}.ready{color:#00f58a;font-weight:900}.footer-slogan{color:#cf31ff;font-style:italic;font-weight:900}
+.toast{position:fixed;z-index:9;bottom:20px;left:50%;transform:translate(-50%,15px);opacity:0;transition:.2s;background:#1a0c27;border:1px solid #8f29cb;color:#f6eaff;border-radius:12px;padding:12px 16px;font-size:12px;max-width:90vw;text-align:center;pointer-events:none;box-shadow:0 10px 30px #0009}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.hero{height:175px}.avatar{width:115px;height:115px;font-size:42px}.layout{grid-template-columns:145px minmax(0,1fr)}.cards{grid-template-columns:1fr}.game-card{grid-column:auto}.game-art{width:90px;height:90px}}
+@media(max-width:620px){.shell{padding:7px}.hero{height:auto;min-height:150px;padding:17px 13px}.avatar{width:68px;height:68px;font-size:28px}.hero-content{gap:10px}.brand-title{font-size:clamp(25px,7vw,42px)}.brand-sub{font-size:9px;letter-spacing:1px}.tagline{font-size:10px}.hero-art{right:-10%;width:48%;opacity:.45}.hero-badge{font-size:9px;right:8px;top:8px}.layout{grid-template-columns:1fr}.sidebar{position:static;display:flex;overflow-x:auto;padding:5px;gap:4px}.nav{min-width:max-content;width:auto;border:0;border-radius:10px;padding:10px 12px;font-size:10px}.nav span{font-size:17px;width:auto}.side-quote,.side-foot{display:none}.main{padding:8px}.card{padding:12px}.metrics{gap:5px}.metric{padding:10px 2px}.metric strong{font-size:16px}.metric small{font-size:8px}.game{gap:8px;padding:8px}.game-art{width:74px;height:80px;font-size:11px}.game-copy b{font-size:12px}.game-copy small{font-size:10px}.footer-bar{flex-wrap:wrap;font-size:10px}.range-line{grid-template-columns:95px 1fr 31px;gap:7px}}
+
+#headlockApp{visibility:hidden}body.headlock-authorized #headlockApp{visibility:visible}
+#keyGate{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:18px;background:radial-gradient(ellipse at 50% 0%,#371052 0,transparent 45%),#07040df5}
+#keyGate .gate-card{width:min(100%,440px);border:1px solid #8b12ff;border-radius:20px;padding:24px;background:#0d0917;box-shadow:0 0 40px #8b12ff44}
+#keyGate h2{margin:0 0 8px;color:#e8c6ff;font-size:23px}
+#keyGate p{color:#b7a5d1;font-size:13px;line-height:1.6}
+#headlockKeyInput{width:100%;padding:14px;border-radius:11px;border:1px solid #5b2c7a;background:#080510;color:#fff;margin:10px 0;font-size:14px}
+#headlockUnlock{width:100%;padding:13px;border-radius:11px;border:1px solid #cf5bff;background:linear-gradient(100deg,#a000ff,#6000d7);color:white;font-weight:900}
+#headlockKeyMsg{font-size:13px;line-height:1.5;margin-top:12px;color:#ff7893}
+#headlockKeyMsg.ok{color:#00f58a}body.locked{overflow:hidden}
+</style>
+</head>
+<body class="locked">
+<div id="keyGate" role="dialog" aria-modal="true" aria-labelledby="keyGateTitle"><div class="gate-card"><h2 id="keyGateTitle">🔐 KÍCH HOẠT HEADLOCK🍏</h2><p>Nhập <b>key loại HEADLOCK</b> do quản trị viên cấp để tiếp tục. Key của HYPERLOCK, IMOU hoặc sản phẩm khác sẽ bị từ chối.</p><form id="headlockKeyForm"><label for="headlockKeyInput">KEY HEADLOCK</label><input id="headlockKeyInput" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="HEADLOCK-..." required><button id="headlockUnlock" type="submit">XÁC MINH KEY</button><div id="headlockKeyMsg" role="status" aria-live="polite"></div></form></div></div><div class="shell" id="headlockApp">
+  <header class="hero">
+    <div class="hero-art"></div>
+    <div class="hero-content">
+      <div class="avatar" aria-label="Ảnh đại diện phong cách ma mị">☠</div>
+      <div>
+        <div class="brand-title">HEADLOCK🍏</div>
+        <div class="brand-sub">FREE FIRE&nbsp; • &nbsp;AIM&nbsp; • &nbsp;OPTIMIZE&nbsp; • &nbsp;STABILITY</div>
+        <div class="tagline">← BÁM ĐẦU - LOCK CỔ - LÊN RANK DỄ DÀNG →</div>
+      </div>
+    </div>
+    <div class="hero-badge">◉ iPhone / Safari</div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <button class="nav active" data-target="home"><span>⌂</span> TRANG CHỦ</button>
+      <button class="nav" data-target="aim"><span>⊕</span> TÂM NGẮM</button>
+      <button class="nav" data-target="assist"><span>◎</span> HỖ TRỢ NGẮM</button>
+      <button class="nav" data-target="device"><span>▦</span> TỐI ƯU THIẾT BỊ</button>
+      <button class="nav" data-target="experience"><span>☷</span> TRẢI NGHIỆM</button>
+      <button class="nav" data-target="games"><span>🎮</span> MỞ GAME</button>
+      <button class="nav" data-target="experience"><span>⚙</span> CÀI ĐẶT</button>
+      <button class="nav" data-target="info"><span>ⓘ</span> THÔNG TIN</button>
+      <div class="side-quote">FREE FIRE<br>KHÔNG CHỈ LÀ<br>TRÒ CHƠI<br>MÀ LÀ ĐAM MÊ</div>
+      <div class="side-foot">HEADLOCK🍏<br>v1.0.0</div>
+    </aside>
+    <main class="main" id="home">
+      <div class="cards">
+        <section class="card" id="aim">
+          <div class="card-head"><div class="head-icon">⊕</div><div><h2>TÂM NGẮM</h2><div class="sub">Điều chỉnh độ nhạy và hỗ trợ tâm</div></div></div>
+          <div class="control-row"><span>Nhẹ tâm (Giảm giật, mượt hơn)</span><input class="switch persist" type="checkbox" data-key="lightAim" aria-label="Nhẹ tâm"></div>
+          <div class="control-row"><span>Giảm rung (Ổn định hình ảnh)</span><input class="switch persist" type="checkbox" data-key="antiShake" aria-label="Giảm rung"></div>
+          <div class="range-line"><label for="sensitivity">Độ nhạy cảm ứng</label><input class="persist-range" id="sensitivity" type="range" min="1" max="100" value="85"><span class="val" id="sensitivityVal">85%</span></div>
+          <div class="range-line"><label for="dragSpeed">Tốc độ kéo tâm</label><input class="persist-range" id="dragSpeed" type="range" min="1" max="100" value="70"><span class="val" id="dragSpeedVal">70%</span></div>
+          <button class="setting" id="advancedBtn" style="width:100%;text-align:left">Cài đặt nâng cao <span>›</span></button>
+          <div id="advanced" hidden>
+            <div class="range-line"><label for="response">Tốc độ phản hồi</label><input class="persist-range" id="response" type="range" min="1" max="100" value="65"><span class="val" id="responseVal">65%</span></div>
+            <div class="range-line"><label for="stability">Ổn định mô phỏng</label><input class="persist-range" id="stability" type="range" min="1" max="100" value="64"><span class="val" id="stabilityVal">64%</span></div>
+          </div>
+        </section>
+        <section class="card" id="assist">
+          <div class="card-head"><div class="head-icon">◎</div><div><h2>HỖ TRỢ NGẮM</h2><div class="sub">Lock - Ghim - Bám đầu</div></div></div>
+          <div class="feature"><div class="control-row"><div class="feature-name"><div class="feature-icon">✿</div><div>Lock Cổ<div class="sub">Tùy chọn giao diện</div></div></div><input class="switch persist" type="checkbox" data-key="neckLock" aria-label="Lock cổ"></div></div>
+          <div class="feature"><div class="control-row"><div class="feature-name"><div class="feature-icon">♟</div><div>Ghim Đầu<div class="sub">Preset minh họa</div></div></div><input class="switch persist" type="checkbox" data-key="headPin" aria-label="Ghim đầu"></div></div>
+          <div class="feature"><div class="control-row"><div class="feature-name"><div class="feature-icon">✥</div><div>Bám Đầu<div class="sub">Tùy chọn giao diện</div></div></div><input class="switch persist" type="checkbox" data-key="headTrack" aria-label="Bám đầu"></div></div>
+          <p class="warning"></p>
+        </section>
+        <section class="card" id="device">
+          <div class="card-head"><div class="head-icon">⚙</div><div><h2>TỐI ƯU THIẾT BỊ</h2><div class="sub">Giảm giật lag - Tăng hiệu suất giao diện</div></div></div>
+          <div class="metrics">
+            <div class="metric"><div class="mi">▦</div><b>RAM</b><strong id="ram">68%</strong><small>Chỉ số minh họa</small></div>
+            <div class="metric"><div class="mi">⚙</div><b>CPU</b><strong id="cpu">42%</strong><small>Chỉ số minh họa</small></div>
+            <div class="metric"><div class="mi">♨</div><b>Nhiệt độ</b><strong id="temp">36°C</strong><small>Không đo iPhone</small></div>
+            <div class="metric"><div class="mi">▣</div><b>Pin</b><strong id="battery">78%</strong><small>Không đọc pin thật</small></div>
+          </div>
+          <button class="btn primary full" id="optimize">ϟ TỐI ƯU NGAY</button>
+          <div class="statusline">◈ Trạng thái: <b id="optStatus">Sẵn sàng</b></div>
+        </section>
+        <section class="card" id="experience">
+          <div class="card-head"><div class="head-icon">☷</div><div><h2>TRẢI NGHIỆM</h2><div class="sub">Âm thanh - Lưu cấu hình - Hiệu ứng</div></div></div>
+          <div class="experience-controls">
+            <div class="control-row"><span>♬ &nbsp; Âm thanh bật/tắt</span><input class="switch" type="checkbox" id="sound" checked></div>
+            <div class="control-row"><span>⚙ &nbsp; Hiệu ứng khi bật chức năng</span><input class="switch persist" type="checkbox" data-key="effects" checked></div>
+            <div class="control-row"><span>▣ &nbsp; Lưu cấu hình tự động</span><input class="switch persist" type="checkbox" data-key="autoSave" checked></div>
+          </div>
+          <div class="volume"><span>♫</span><label for="volume">Âm lượng hiệu ứng</label><input id="volume" type="range" min="0" max="100" value="70"><span id="volumeVal">70%</span></div>
+          <div class="button-row"><button class="btn primary" id="save">LƯU CẤU HÌNH</button><button class="btn" id="reset">KHÔI PHỤC</button></div>
+        </section>
+        <section class="card game-card" id="games">
+          <div class="card-head"><div class="head-icon">🎮</div><div><h2>MỞ GAME</h2><div class="sub">Chọn đúng phiên bản để mở</div></div></div>
+          <div class="games">
+            <div class="game"><div class="game-art">FREE<br>FIRE</div><div class="game-copy"><b>FREE FIRE THƯỜNG</b><small>Mở ứng dụng Free Fire</small><button class="btn primary" id="openRegular">MỞ NGAY ↗</button></div></div>
+            <div class="game max"><div class="game-art">FREE FIRE<br>MAX</div><div class="game-copy"><b>FREE FIRE MAX</b><small>Mở ứng dụng Free Fire MAX</small><button class="btn gold" id="openMax">MỞ NGAY ↗</button></div></div>
+          </div>
+        </section>
+        <section class="card" id="info" style="grid-column:1/-1;padding:12px 15px">
+          <div class="footer-bar" style="margin:0;border:0;padding:0;background:transparent"><span class="ready">● SẴN SÀNG</span><span>HEADLOCK🍏 - FREE FIRE</span><span class="footer-slogan">CHƠI THÔNG MINH - LUÔN DẪN ĐẦU</span></div>
+        </section>
+      </div>
+    </main>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(() => {
+ const $=id=>document.getElementById(id), storageKey='headlock-ui-v1';let toastTimer;
+  // Phải khớp với thuật toán HEADLOCK trong trang admin.
+  function headlockSignature(payload){let h=2166136261;const s='HEADLOCK_OFFLINE_LICENSE_V1|'+payload;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}h^=h>>>13;h=Math.imul(h,0x5bd1e995);h^=h>>>15;return (h>>>0).toString(16).toUpperCase().padStart(8,'0')}
+  function validateHeadlockKey(raw){const code=String(raw||'').trim().toUpperCase();const m=code.match(/^HEADLOCK-([0-9A-Z]+)-([0-9A-F]{12})-([0-9A-F]{8})$/);if(!m)return {ok:false,msg:'Sai loại key hoặc sai định dạng. Chỉ key HEADLOCK mới được chấp nhận.'};const payload=m[1]+'-'+m[2];if(headlockSignature(payload)!==m[3])return {ok:false,msg:'Key không hợp lệ hoặc đã bị chỉnh sửa.'};const exp=parseInt(m[1],36);if(m[1]!=='0'&&(!Number.isFinite(exp)||exp<=Date.now()))return {ok:false,msg:'Key đã hết hạn.'};return {ok:true,msg:'Xác minh thành công. Chào mừng bạn đến HEADLOCK🍏.'}}
+  $('headlockKeyForm').addEventListener('submit',e=>{e.preventDefault();const result=validateHeadlockKey($('headlockKeyInput').value);$('headlockKeyMsg').textContent=result.msg;$('headlockKeyMsg').className=result.ok?'ok':'';if(result.ok){document.body.classList.remove('locked');document.body.classList.add('headlock-authorized');$('keyGate').remove()}});
+
+ function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2300)}
+ function beep(){if(!$('sound').checked)return;try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return;const c=new C(),o=c.createOscillator(),g=c.createGain();o.type='sine';o.frequency.value=720;g.gain.setValueAtTime(.035,c.currentTime);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+.08);o.connect(g);g.connect(c.destination);o.start();o.stop(c.currentTime+.085);o.onended=()=>c.close()}catch(_){}}
+ function collect(){const data={toggles:{},ranges:{},sound:$('sound').checked,volume:$('volume').value};document.querySelectorAll('.persist').forEach(e=>data.toggles[e.dataset.key]=e.checked);document.querySelectorAll('.persist-range').forEach(e=>data.ranges[e.id]=e.value);return data}
+ function save(show){try{localStorage.setItem(storageKey,JSON.stringify(collect()));if(show)toast('Cấu hình đã lưu trên thiết bị.')}catch(_){if(show)toast('Safari không cho phép lưu cấu hình trong phiên này.')}}
+ function updateRangeLabels(){document.querySelectorAll('.persist-range').forEach(e=>{const label=$(e.id+'Val');if(label)label.textContent=e.value+'%'});$('volumeVal').textContent=$('volume').value+'%'}
+ function apply(d){if(!d)return;document.querySelectorAll('.persist').forEach(e=>{if(d.toggles&&typeof d.toggles[e.dataset.key]==='boolean')e.checked=d.toggles[e.dataset.key]});document.querySelectorAll('.persist-range').forEach(e=>{if(d.ranges&&d.ranges[e.id]!=null)e.value=d.ranges[e.id]});if(typeof d.sound==='boolean')$('sound').checked=d.sound;if(d.volume!=null)$('volume').value=d.volume;updateRangeLabels()}
+ document.querySelectorAll('.nav').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.nav').forEach(n=>n.classList.remove('active'));b.classList.add('active');$(b.dataset.target).scrollIntoView({behavior:'smooth',block:'start'})}));
+ document.querySelectorAll('.persist').forEach(e=>e.addEventListener('change',()=>{beep();if($('autoSave').checked)save(false);toast(e.checked?'Đã bật tùy chọn.':'Đã tắt tùy chọn.')}))
+ document.querySelectorAll('.persist-range').forEach(e=>e.addEventListener('input',()=>{updateRangeLabels();if($('autoSave').checked)save(false)}));
+ $('volume').addEventListener('input',()=>{updateRangeLabels()});
+ $('advancedBtn').addEventListener('click',()=>{$('advanced').hidden=!$('advanced').hidden;$('advancedBtn').innerHTML=$('advanced').hidden?'Cài đặt nâng cao <span>›</span>':'Ẩn cài đặt nâng cao <span>⌄</span>'});
+ $('save').addEventListener('click',()=>{beep();save(true)});
+ $('reset').addEventListener('click',()=>{document.querySelectorAll('.persist').forEach(e=>e.checked=e.dataset.key==='effects'||e.dataset.key==='autoSave');$('sensitivity').value=85;$('dragSpeed').value=70;$('response').value=65;$('stability').value=64;$('volume').value=70;$('sound').checked=true;$('optStatus').textContent='Sẵn sàng';updateRangeLabels();save(false);toast('Đã khôi phục cấu hình mặc định.')});
+ $('optimize').addEventListener('click',()=>{beep();$('optStatus').textContent='Đã kiểm tra';toast('Đã chạy kiểm tra giao diện. RAM/CPU thật không thể đọc hoặc tối ưu từ HTML Safari.')});
+ function launch(scheme,label){beep();toast('Đang thử mở '+label+' nếu ứng dụng hỗ trợ liên kết này. Nếu không mở, hãy khởi chạy game từ Màn hình chính.');try{location.href=scheme}catch(_){toast('Không thể mở ứng dụng từ trình duyệt này.')} }
+ $('openRegular').addEventListener('click',()=>launch('freefire://','Free Fire thường'));
+ $('openMax').addEventListener('click',()=>launch('freefiremax://','Free Fire MAX'));
+ try{const raw=localStorage.getItem(storageKey);if(raw)apply(JSON.parse(raw))}catch(_){}updateRangeLabels();
+})();
+</script>
+<script>
+/* Tắt thao tác phóng to/thu nhỏ; không thay đổi dữ liệu hay chức năng khác. */
+document.addEventListener('gesturestart', function(e){e.preventDefault();}, {passive:false});
+document.addEventListener('gesturechange', function(e){e.preventDefault();}, {passive:false});
+document.addEventListener('gestureend', function(e){e.preventDefault();}, {passive:false});
+document.addEventListener('touchmove', function(e){if(e.touches && e.touches.length > 1)e.preventDefault();}, {passive:false});
+</script>
+</body>
+</html>
